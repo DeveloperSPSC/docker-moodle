@@ -24,7 +24,7 @@ services:
       - MOODLE_DATABASE_PASSWORD=Dev0pC#1420;
       - MOODLE_DATABASE_NAME=spsc_moodle
       - MOODLE_USERNAME=admin
-      - MOODLE_PASSWORD=Dev0pC#1420;
+      - MOODLE_PASSWORD=DevC#861420;
     volumes:
       - 'moodle_data:/bitnami/moodle'
       - 'moodledata_data:/bitnami/moodledata'
