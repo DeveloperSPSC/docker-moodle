@@ -1,6 +1,7 @@
 services:
   mariadb:
     image: docker.io/bitnami/mariadb:latest
+    container_name: moodle-db
     environment:
       - MARIADB_ROOT_PASSWORD=Dev0pC#SPSC09
       - MARIADB_USER=spsc
@@ -14,6 +15,7 @@ services:
       - 'mariadb_data:/bitnami/mariadb'
   moodle:
     image: docker.io/bitnami/moodle:4.5
+    container_name: moodle
     ports:
       - '80:8080'
       - '443:8443'
